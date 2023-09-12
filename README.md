@@ -1,6 +1,3 @@
-Bien sûr, voici un exemple de contenu que vous pourriez inclure dans un fichier `README.md` pour expliquer les étapes que nous avons discutées :
-
-```markdown
 # Projet WP-BTS-E-Learning
 
 Ce projet utilise Git pour la gestion de versions. Si vous rencontrez des problèmes lors de l'ajout et de la mise à jour de fichiers, veuillez suivre ces étapes pour résoudre les conflits.
