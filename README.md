@@ -38,10 +38,3 @@ Si vous rencontrez des problèmes lors de la mise à jour du dépôt distant, su
    ```
 
 Si ces étapes ne fonctionnent pas, envisagez de cloner à nouveau le dépôt et de déplacer vos fichiers modifiés.
-
-## Remarque
-
-Si vous continuez à rencontrer des problèmes, il se peut que cela soit lié à des configurations spécifiques sur le dépôt distant. N'hésitez pas à contacter les administrateurs du dépôt pour obtenir de l'aide supplémentaire.
-```
-
-Vous pouvez copier ce contenu dans un fichier `README.md` à la racine de votre projet GitHub. Assurez-vous de personnaliser les informations en fonction de votre projet.
