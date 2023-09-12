@@ -31,8 +31,13 @@ Si vous rencontrez des problèmes lors de la mise à jour du dépôt distant, su
    git add .
    git commit -m "message"
    ```
+   Ou pour ajouter un fichier spécifique (à répéter plusieurs fois pour push plusieurs fichiers à la fois) :
+   ```bash
+   git add . chemin/nom_du_fichier
+   git commit -m "message"
+   ```
 
-5. Poussez les modifications vers le dépôt distant :
+6. Poussez les modifications vers le dépôt distant :
    ```bash
    git push origin main
    ```
