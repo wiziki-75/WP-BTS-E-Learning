@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur l'Algorithmie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz sur l'Algorithmie</h1>
+        <div class="question" id="question1">
+            <p>1. Qu'est-ce qu'un algorithme ?</p>
+            <label><input type="radio" name="q1" value="0"> a) Un langage de programmation</label><br>
+            <label><input type="radio" name="q1" value="1"> b) Une séquence d'instructions pour résoudre un problème</label><br>
+            <label><input type="radio" name="q1" value="0"> c) Une base de données</label>
+        </div>
+        <div class="question" id="question2">
+            <p>2. Quels sont les types de variables en algorithmie ?</p>
+            <label><input type="radio" name="q2" value="1"> a) Entier, Flottant, Booléen, Chaine de caractères</label><br>
+            <label><input type="radio" name="q2" value="0"> b) Alpha, Beta, Gamma, Delta</label><br>
+            <label><input type="radio" name="q2" value="0"> c) Variable1, Variable2, Variable3</label>
+        </div>
+        <div class="question" id="question3">
+            <p>3. Quelle est la structure utilisée pour répéter un bloc d'instructions tant qu'une condition est vraie ?</p>
+            <label><input type="radio" name="q3" value="0"> a) Structure de condition</label><br>
+            <label><input type="radio" name="q3" value="0"> b) Boucle Pour</label><br>
+            <label><input type="radio" name="q3" value="1"> c) Boucle Tant Que</label>
+        </div>
+        <div class="question" id="question4">
+            <p>4. Quelle est la structure de condition qui exécute différentes instructions en fonction de la véracité d'une condition ?</p>
+            <label><input type="radio" name="q4" value="0"> a) Si...Alors</label><br>
+            <label><input type="radio" name="q4" value="1"> b) Si...Sinon</label><br>
+            <label><input type="radio" name="q4" value="0"> c) Si...Tant Que</label>
+        </div>
+        <div class="question" id="question5">
+            <p>5. À quoi sert une fonction en algorithmie ?</p>
+            <label><input type="radio" name="q5" value="0"> a) À afficher des messages à l'écran</label><br>
+            <label><input type="radio" name="q5" value="1"> b) À regrouper un bloc de code réutilisable</label><br>
+            <label><input type="radio" name="q5" value="0"> c) À créer des boucles</label>
+        </div>
+        <button onclick="calculateScore()">Vérifier les réponses</button>
+    </div>
+
+    <script>
+        function calculateScore() {
+            let score = 0;
+
+            const reponses = [2, 1, 3, 2, 2];
+
+            for (let i = 1; i <= 5; i++) {
+                const reponse_select = document.querySelector(`#question${i} input:checked`);
+                if (reponse_select) {
+                    score += parseInt(reponse_select.value);
+                }
+            }
+
+            alert(`Votre score est de ${score}/5`);
+        }
+    </script>
+</body>
+</html>
