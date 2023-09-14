@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours C++ pour Débutants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cours C++ pour Débutants</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Introduction au C++</a></li>
+            <li><a href="#section2">Les Bases du C++</a></li>
+            <li><a href="#section3">Structures de Contrôle</a></li>
+            <li><a href="#section4">Tableaux</a></li>
+            <li><a href="#section5">Les boucles</a></li>
+            <li><a href="#section6">Les conditions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <h2>Introduction au C++</h2>
+            <p>Le C++ est un langage de programmation polyvalent qui est utilisé pour développer des logiciels systèmes, des jeux, des applications, et bien plus encore. Il est dérivé du langage C.</p>
+            <p>Exemple simple de code C++ :</p>
+            <pre>
+                <code>
+                    #include &lt;iostream&gt;
+                    using namespace std;
+
+                    int main() {
+                        cout << "Bonjour le monde !" << endl;
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section id="section2">
+            <h2>Les Bases du C++</h2>
+            <p>Dans cette section, nous allons explorer les éléments fondamentaux du C++ :</p>
+            <ul>
+                <li><strong>Variables et Types de Données :</strong> En C++, les variables doivent être déclarées avec un type spécifique. Les types incluent les entiers, les flottants, les caractères, les booléens, etc.</li>
+                <li><strong>Opérateurs :</strong> Le C++ offre une variété d'opérateurs pour effectuer des opérations arithmétiques et logiques.</li>
+                <li><strong>Entrées/Sorties :</strong> Les fonctions cin et cout sont utilisées pour l'entrée (input) et la sortie (output) dans la console.</li>
+            </ul>
+            <p>Exemple d'utilisation de variables en C++ :</p>
+            <pre>
+                <code>
+                    int age = 25;
+                    float taille = 1.75;
+                    char grade = 'A';
+                    bool estActif = true;
+                </code>
+            </pre>
+        </section>
+
+        <section id="section3">
+            <h2>Structures de Contrôle en C++</h2>
+            <p>Apprenez à prendre des décisions et à répéter des actions avec des structures de contrôle en C++ :</p>
+            <ul>
+                <li><strong>Conditions :</strong> Les instructions conditionnelles (if, else, switch) permettent d'exécuter du code en fonction d'une condition.</li>
+                <li><strong>Boucles :</strong> Les boucles (for, while, do...while) permettent de répéter des actions.</li>
+            </ul>
+            <p>Exemple d'utilisation de la structure if...else en C++ :</p>
+            <pre>
+                <code>
+                    int note = 15;
+
+                    if (note >= 10) {
+                        cout << "Bravo, vous avez réussi !" << endl;
+                    } else {
+                        cout << "Dommage, vous devez étudier davantage." << endl;
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2>Tableaux</h2>
+            <p>Découvrez comment manipuler des tableaux en C++ :</p>
+            <ul>
+                <li><strong>Déclaration et Utilisation de Tableaux :</strong> Les tableaux permettent de stocker plusieurs valeurs du même type dans une seule variable.</li>
+                <li><strong>Boucles avec Tableaux :</strong> Les boucles sont souvent utilisées pour parcourir et traiter les éléments d'un tableau.</li>
+            </ul>
+            <p>Exemple d'utilisation d'un tableau en C++ :</p>
+            <pre>
+                <code>
+                    int tableau[5] = {2, 4, 6, 8, 10};
+                </code>
+            </pre>
+        </section>
+
+        <section id="section5">
+            <h2>Les Boucles en C++</h2>
+            <p>Les boucles en C++ permettent de répéter un bloc de code tant qu'une condition est vraie. Elles sont utiles pour automatiser des tâches répétitives.</p>
+        
+            <h3>La Boucle <code>for</code></h3>
+            <p>La boucle <code>for</code> permet de spécifier une condition d'initialisation, une condition de continuation, et une expression d'itération.</p>
+            <pre>
+                <code>
+                    for (int i = 1; i <= 5; i++) {
+                        cout << "Iteration " << i << endl;
+                    }
+                </code>
+            </pre>
+        
+            <h3>La Boucle <code>while</code></h3>
+            <p>La boucle <code>while</code> exécute un bloc de code tant qu'une condition est vraie.</p>
+            <pre>
+                <code>
+                    int compteur = 1;
+        
+                    while (compteur <= 3) {
+                        cout << "Tour " << compteur << endl;
+                        compteur++;
+                    }
+                </code>
+            </pre>
+        
+            <h3>La Boucle <code>do...while</code></h3>
+            <p>La boucle <code>do...while</code> exécute un bloc de code au moins une fois, puis répète tant qu'une condition est vraie.</p>
+            <pre>
+                <code>
+                    int compteur = 1;
+        
+                    do {
+                        cout << "Tour " << compteur << endl;
+                        compteur++;
+                    } while (compteur <= 3);
+                </code>
+            </pre>
+        </section>        
+
+        <section id="section6">
+            <h2>Les Conditions en C++</h2>
+            <p>Les conditions en C++ permettent d'exécuter des blocs de code en fonction de certaines conditions. Elles sont essentielles pour prendre des décisions dans un programme.</p>
+        
+            <h3>La Structure <code>if...else</code></h3>
+            <p>La structure <code>if...else</code> permet d'exécuter un bloc de code si une condition est vraie et un autre bloc si la condition est fausse.</p>
+            <pre>
+                <code>
+                    int note = 15;
+        
+                    if (note >= 10) {
+                        cout << "Bravo, vous avez réussi !" << endl;
+                    } else {
+                        cout << "Dommage, vous devez étudier davantage." << endl;
+                    }
+                </code>
+            </pre>
+        
+            <h3>La Structure <code>else if</code></h3>
+            <p>La structure <code>else if</code> permet de vérifier plusieurs conditions les unes après les autres.</p>
+            <pre>
+                <code>
+                    int heure = 14;
+        
+                    if (heure < 12) {
+                        cout << "Bonne matinée !" << endl;
+                    } else if (heure < 18) {
+                        cout << "Bonne après-midi !" << endl;
+                    } else {
+                        cout << "Bonne soirée !" << endl;
+                    }
+                </code>
+            </pre>
+        
+            <h3>Opérateurs de Comparaison</h3>
+            <p>Les opérateurs de comparaison permettent de comparer des valeurs. Voici quelques exemples :</p>
+            <ul>
+                <li><code>==</code> : Égal à</li>
+                <li><code>!=</code> : Différent de</li>
+                <li><code>&lt;</code> : Inférieur à</li>
+                <li><code>&lt;=</code> : Inférieur ou égal à</li>
+                <li><code>&gt;</code> : Supérieur à</li>
+                <li><code>&gt;=</code> : Supérieur ou égal à</li>
+            </ul>
+        
+            <h3>Opérateurs Logiques</h3>
+            <p>Les opérateurs logiques permettent de combiner des conditions. Voici quelques exemples :</p>
+            <ul>
+                <li><code>&amp;&amp;</code> : ET logique</li>
+                <li><code>||</code> : OU logique</li>
+                <li><code>!</code> : NON logique</li>
+            </ul>
+        </section>        
+    </main>
+</body>
+</html>
