@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours PHP pour Débutants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cours PHP pour Débutants</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Introduction à PHP</a></li>
+            <li><a href="#section2">Les Bases de PHP</a></li>
+            <li><a href="#section3">Fonctions et Structures de Contrôle</a></li>
+            <li><a href="#section4">Manipulation de Données</a></li>
+            <li><a href="#section5">Les conditions en PHP</a></li>
+            <li><a href="#section6">Les boucles en PHP</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <h2>Introduction à PHP</h2>
+            <p>PHP (Hypertext Preprocessor) est un langage de programmation côté serveur utilisé pour créer des pages web dynamiques. Il s'intègre facilement dans le code HTML.</p>
+            <p>Exemple simple de code PHP dans un fichier HTML :</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        $nom = "John Doe";
+                        echo "Bonjour, $nom !";
+                    ?&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="section2">
+            <h2>Les Bases de PHP</h2>
+            <p>Dans cette section, nous allons apprendre les éléments fondamentaux de PHP :</p>
+            <ul>
+                <li><strong>Variables et Types de Données :</strong> En PHP, vous pouvez déclarer des variables sans préciser leur type. Les types incluent les entiers, les flottants, les chaînes de caractères, les booléens, etc.</li>
+                <li><strong>Opérateurs :</strong> PHP propose une large gamme d'opérateurs pour effectuer des opérations arithmétiques, logiques, etc.</li>
+                <li><strong>Conditions et Boucles :</strong> Les instructions conditionnelles (if/else) permettent d'exécuter du code en fonction d'une condition. Les boucles (for, while, foreach) permettent de répéter des actions.</li>
+            </ul>
+
+            <p>Exemple d'utilisation de boucle :</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        for ($i = 1; $i &lt;= 5; $i++) {
+                            echo "Iteration $i &lt;br&gt;";
+                        }
+                    ?&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="section3">
+            <h2>Fonctions et Structures de Contrôle</h2>
+            <p>Apprenez à organiser votre code avec des fonctions et à prendre des décisions avec des structures de contrôle comme les boucles et les conditions.</p>
+            <p>Exemple de fonction en PHP :</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        function direBonjour($nom) {
+                            return "Bonjour, $nom !";
+                        }
+
+                        $message = direBonjour("Alice");
+                        echo $message;
+                    ?&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2>Manipulation de Données</h2>
+            <p>Découvrez comment manipuler des tableaux, des chaînes de caractères et d'autres types de données en PHP.</p>
+            <p>Exemple de manipulation de tableau :</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        $fruits = array("Pomme", "Banane", "Orange");
+                        echo "Le premier fruit est : " . $fruits[0];
+                    ?&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="section5">
+            <h2>Les Conditions en PHP</h2>
+            <p>Les conditions en PHP permettent d'exécuter des blocs de code en fonction de certaines conditions. Elles sont essentielles pour prendre des décisions dans un programme.</p>
+        
+            <h3>La Structure <code>if...else</code></h3>
+            <p>La structure <code>if...else</code> permet d'exécuter un bloc de code si une condition est vraie et un autre bloc si la condition est fausse.</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        $note = 15;
+        
+                        if ($note >= 10) {
+                            echo "Bravo, vous avez réussi !";
+                        } else {
+                            echo "Dommage, vous devez étudier davantage.";
+                        }
+                    ?&gt;
+                </code>
+            </pre>
+        
+            <h3>La Structure <code>elseif</code></h3>
+            <p>La structure <code>elseif</code> permet de vérifier plusieurs conditions les unes après les autres.</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        $heure = 14;
+        
+                        if ($heure < 12) {
+                            echo "Bonne matinée !";
+                        } elseif ($heure < 18) {
+                            echo "Bonne après-midi !";
+                        } else {
+                            echo "Bonne soirée !";
+                        }
+                    ?&gt;
+                </code>
+            </pre>
+        
+            <h3>Opérateurs de Comparaison</h3>
+            <p>Les opérateurs de comparaison permettent de comparer des valeurs. Voici quelques exemples :</p>
+            <ul>
+                <li><code>==</code> : Égal à</li>
+                <li><code>!=</code> : Différent de</li>
+                <li><code>&lt;</code> : Inférieur à</li>
+                <li><code>&lt;=</code> : Inférieur ou égal à</li>
+                <li><code>&gt;</code> : Supérieur à</li>
+                <li><code>&gt;=</code> : Supérieur ou égal à</li>
+            </ul>
+        
+            <h3>Opérateurs Logiques</h3>
+            <p>Les opérateurs logiques permettent de combiner des conditions. Voici quelques exemples :</p>
+            <ul>
+                <li><code>&amp;&amp;</code> : ET logique</li>
+                <li><code>||</code> : OU logique</li>
+                <li><code>!</code> : NON logique</li>
+            </ul>
+        </section>
+
+        <section id="section6">
+            <h2>Les Boucles en PHP</h2>
+            <p>Les boucles en PHP permettent de répéter un bloc de code tant qu'une condition est vraie. Elles sont utiles pour automatiser des tâches répétitives.</p>
+        
+            <h3>La Boucle <code>for</code></h3>
+            <p>La boucle <code>for</code> permet de spécifier une condition d'initialisation, une condition de continuation, et une expression d'itération.</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        for ($i = 1; $i &lt;= 5; $i++) {
+                            echo "Iteration $i &lt;br&gt;";
+                        }
+                    ?&gt;
+                </code>
+            </pre>
+        
+            <h3>La Boucle <code>while</code></h3>
+            <p>La boucle <code>while</code> exécute un bloc de code tant qu'une condition est vraie.</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        $compteur = 1;
+        
+                        while ($compteur <= 3) {
+                            echo "Tour $compteur &lt;br&gt;";
+                            $compteur++;
+                        }
+                    ?&gt;
+                </code>
+            </pre>
+        
+            <h3>La Boucle <code>do...while</code></h3>
+            <p>La boucle <code>do...while</code> exécute un bloc de code au moins une fois, puis répète tant qu'une condition est vraie.</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        $compteur = 1;
+        
+                        do {
+                            echo "Tour $compteur &lt;br&gt;";
+                            $compteur++;
+                        } while ($compteur <= 3);
+                    ?&gt;
+                </code>
+            </pre>
+        
+            <h3>La Boucle <code>foreach</code></h3>
+            <p>La boucle <code>foreach</code> est spécialement conçue pour parcourir des tableaux ou des listes.</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        $fruits = array("Pomme", "Banane", "Orange");
+        
+                        foreach ($fruits as $fruit) {
+                            echo "$fruit &lt;br&gt;";
+                        }
+                    ?&gt;
+                </code>
+            </pre>
+        </section>        
+        
+    </main>
+</body>
+</html>
