@@ -22,6 +22,46 @@
         .section p {
             margin: 0;
         }
+        .progress {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+        }
+    
+        .progress-bar {
+            width: 0;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+        }
+        .progress {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+        }
+    
+        .progress-bar {
+            width: 0;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+        }
+        span {
+            font-weight: bold;
+          }
+          .download-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .download-link {
+            display: block;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -44,23 +84,66 @@
         <p><strong>IRIS</strong> - BTS SIO SLAM - 2022 à 2024</p>
         <p><strong>IRIS</strong> - BAC PRO SN option RISC - 2019 à 2022</p>
     </div>
-
+    
     <div class="section">
         <h2>Compétences</h2>
         <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>WordPress</li>
-            <li>Python</li>
-            <li>C++</li>
+            <li>
+                <span>HTML/CSS</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%; background-color: #b68211;">90%</div>
+                </div>
+            </li>
+            <li>
+                <span>JavaScript</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%; background-color: #d4c815;">60%</div>
+                </div>
+            </li>
+            <li>
+                <span>PHP</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%; background-color: #1a35cf;">80%</div>
+                </div>
+            </li>
+            <li>
+                <span>MySQL</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%; background-color: #c08922;">60%</div>
+                </div>
+            </li>
+            <li>
+                <span>WordPress</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%; background-color: #0a9bc7;">85%</div>
+                </div>
+            </li>
+            <li>
+                <span>Python</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%; background-color: #12b13a;">65%</div>
+                </div>
+            </li>
+            <li>
+                <span>C++</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 40%; background-color: #a31717;">40%</div>
+                </div>
+            </li>
         </ul>
     </div>
+    </div>
+    
 
     <div class="section">
         <h2>Langues</h2>
         <p>Français (Langue maternelle), Anglais (Courant)</p>
+    </div>
+
+    <div class="download-box">
+        <h2>Télécharger le CV</h2>
+        <p>Cliquez sur le lien ci-dessous pour télécharger le CV au format PDF :</p>
+        <a href="http://bts-e-learning.infinityfreeapp.com/wp-content/uploads/2023/09/Anthony-guerrand-CV-2023-1.pdf" class="download-link" download>Télécharger le CV</a>
     </div>
 </body>
 </html>
