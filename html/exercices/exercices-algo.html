@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .quiz-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .quiz-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="section1">
+            <h2>Exercice 1</h2>
+            <p>Écrire un algorithme qui prend en entrée une liste de nombres et retourne leur moyenne.</p>
+            <pre>
+                <code>
+                    Algo : moyenne 
+                    Déclaration 
+                        tab: tableau[1..10] de entier
+                        s, i: entier
+                        m: reel
+                    Début 
+                        Pour i allant de 1 à 10 Faire
+                            afficher("Donner un entier")
+                            saisir(tab[i])
+                        Fin Pour
+                        s <- 0
+                        Pour i allant de 1 à 10 Faire
+                            s <- s + tab[i]
+                        Fin Pour
+                        m <- s/10
+                        afficher("la moyenne du tableau est de ", m)
+                    Fin moyenne
+                </code>
+            </pre>
+        </section>
+
+        <section id="section2">
+            <h2>Exercice 2</h2>
+            <p>Écrire un algorithme qui résout l'équation du type ax + b = 0 et affiche la solution.</p>
+            <pre>
+                <code>
+                    Algo : equation 
+                    Déclaration 
+                        a, x, b: réel
+                    Début
+                        afficher("donner le premier coef")
+                        saisir(a)
+                        afficher("donner le second coef")
+                        saisir(b)
+                        si a = 0 
+                            alors si b=0
+                                    alors afficher("ensemble des solution est R")
+                                    sinon afficher("ensemble des solutions est vide")
+                                    fin si
+                            sinon 
+                                x <- -b/a
+                                afficher("la solution est:",x)
+                        fin si
+                    Fin equation
+                </code>
+            </pre>
+        </section>
+
+        <section id="section3">
+            <h2>Exercice 3</h2>
+            <p>Écrire un algorithme qui détermine si un nombre est parfait ou non.</p>
+            <pre>
+                <code>
+                    Algo : parfait
+                    Déclaration 
+                        n, s, i : entier
+                    Début
+                        afficher("Donner un nombre : ")
+                        saisir(n)
+                        s<-0
+                        pour i allant de 1 à n-1 faire
+                            si n%i=0
+                                alors s<-s+i
+                            fin si
+                        fin pour
+                        si n=s
+                            alors afficher("Votre nombre est parfait")
+                            sinon afficher("Votre nombre n'est pas parfait")
+                        fin si
+                    
+                    Fin parfait
+                </code>
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2>Exercice 4</h2>
+            <p>Écrire un algorithme qui calcule le factoriel d'un nombre donné.</p>
+            <pre>
+                <code>
+                    Algo : calcul_fact
+                    Déclaration 
+                        Procédure factoriel(n:entier)
+                        Déclaration
+                            fact, i: entier
+                        Début
+                            fact <- 1
+                            Pour i allant de 1 à n Faire
+                                fact <- fact*i 
+                            Fin pour 
+                            Afficher ("le factoriel est de:",fact)
+                        Fin factoriel
+                        nb: entier
+                    Début
+                        Afficher ("donner un entier")
+                        Saisir (nb)
+                        factoriel (nb)
+                    Fin calcul_fact
+                </code>
+            </pre>
+        </section>
+
+        <section id="section5">
+            <h2>Exercice 5</h2>
+            <p>Écrire un algorithme qui ouvre un fichier, affiche son contenu caractère par caractère, et compte le nombre total de caractères.</p>
+            <pre>
+                <code>
+                    Algo : affiche_fichier
+                    Déclaration 
+                        f : fichier
+                        nom : chaine
+                        nb : entier
+                        c : caractère
+                    Début 
+                        afficher ("Donner le nom du fichier")
+                        saisir(nom)
+                        f <- ouvrir (nom,lecture)
+                        nb <- 0
+                        tant que fin_fichier(f) = faux faire
+                            lire (f,c)
+                            afficher (c)
+                            nb <- nb+1
+                        Fin tant que
+                        fermer (f)
+                        afficher ("Ce fichier contient ",nb,"caractères")
+                    
+                    Fin affiche_fichier
+                </code>
+            </pre>
+        </section>  
+
+        <div style="text-align: center;">
+            <h1>Testez vos compétences en Algorithmie</h1>
+            <p>Êtes-vous prêt pour le quiz ?</p>
+            <a class="quiz-button" href="http://bts-e-learning.infinityfreeapp.com/exercices-algorithmie">Commencer le Quiz</a>
+        </div>
+        
+    </main>
+</body>
+</html>
